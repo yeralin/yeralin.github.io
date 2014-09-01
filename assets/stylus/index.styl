@@ -1,0 +1,69 @@
+@import 'nib'
+
+stateColors = blue yellow yellowgreen red
+states = zeroState, firstState, secondState, thirdState
+abs = absolute
+
+html
+	-webkit-font-smoothing: antialiased
+	height 100% //1366px
+	width 100% //1080px
+
+fontSet()
+	font-size 4em
+	font-weight 900
+	-text-stroke 1%
+	-font-smoothing antialiased !important
+	text-shadow 0 0 1px rgba(51,51,51,0.2)
+	font-family 'Merriweather' serif
+
+backgroundSet()
+	width 100%
+	height 100%
+	position absolute
+	opacity 0.2
+	z-index -1
+
+.one_page_main
+	z-index -1
+	position absolute
+
+.page_container
+	width 100%
+
+.contentText
+	margin 0 auto
+	padding-top 5em
+	width 100%
+	color black
+	text-align center
+	fontSet()
+
+.footer
+	bottom 0%
+	position fixed
+	height 4%
+	width 100%
+
+.first > .background
+	backgroundSet()
+	background-color rgb(241, 196, 15)
+
+.second > .background
+	backgroundSet()
+	background-color rgb(255,79,0)
+
+.third > .background
+	backgroundSet()
+	background-color rgb(61,182,241)
+
+#doughnut-chart-skills
+	height 20px
+	
+.contentImg
+	position relative
+	top 60%
+	left 40%
+	
+#arrowDown
+	width 10%

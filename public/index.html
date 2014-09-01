@@ -1,0 +1,60 @@
+
+<html lang="en" ng-app="pageController">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Single Page App</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleButtons.css" />
+    <link rel="stylesheet" type="text/css" href="css/nprogress.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/nprogress.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/anijs-min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="menu_container">
+      <div class="main clearfix">
+        <nav id="menu" class="nav">
+          <ul>
+            <li><a id="home" href="#"><span class="icon"><i aria-hidden="true" class="icon-home"></i></span><span>Home</span></a></li>
+            <li><a id="portfolio" href="#"><span class="icon"><i aria-hidden="true" class="icon-quill"></i></span><span>Portfolio</span></a></li>
+            <li><a id="aboutMe" href="#"><span class="icon"><i aria-hidden="true" class="icon-smiley"></i></span><span>About me</span></a></li>
+            <li><a id="contact"><span href="#" class="icon"><i aria-hidden="true" class="icon-phone"></i></span><span>Contact</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="one_page_main">
+      <section class="first">
+        <div class="background"></div>
+        <div class="page_container">
+          <ng-view></ng-view>
+        </div>
+      </section>
+      <section class="second">
+        <div class="background"></div>
+        <div class="page_container">
+          <div class="contentText">Hello and Welcome!</div>
+        </div>
+      </section>
+      <section class="third">
+        <div class="background"></div>
+        <div class="page_container">
+          <div class="contentText">Hello and Welcome!</div>
+        </div>
+      </section>
+    </div>
+    <div class="footer"></div><script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/onePage.controller.js"></script>
+  </body>
+</html>
