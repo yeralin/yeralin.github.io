@@ -18,23 +18,9 @@ $(document).ready(function() {
         $(".main").moveTo(1);
     });
 
-    $('#portfolio').click(function(event) {
-       $(".main").moveTo(1);
-   });
-
-    $('#aboutMe').click(function(event) {
-       $(".main").moveTo(1);
-    });
-
-    $('#contact').click(function(event) {
-        $(".main").moveTo(1);
-    });
 
 
-    $("[id*='Btn']").stop(true).on('click', function(e) {
-        e.preventDefault();
-        $(this).scrolld();
-    });
+
 
 });
 

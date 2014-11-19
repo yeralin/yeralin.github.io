@@ -4,12 +4,11 @@
     <meta charset="utf-8"/>
     <title>Single Page App</title>
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/styleButtons.css" />
     <link rel="stylesheet" type="text/css" href="css/nprogress.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -21,20 +20,8 @@
     <script src="js/index.js"></script>
   </head>
   <body>
-    <div class="menu_container">
-      <div class="main clearfix">
-        <nav id="menu" class="nav">
-          <ul>
-            <li><a id="home" href="#"><span class="icon"><i aria-hidden="true" class="icon-home"></i></span><span>Home</span></a></li>
-            <li><a id="portfolio" href="#"><span class="icon"><i aria-hidden="true" class="icon-quill"></i></span><span>Portfolio</span></a></li>
-            <li><a id="aboutMe" href="#"><span class="icon"><i aria-hidden="true" class="icon-smiley"></i></span><span>About me</span></a></li>
-            <li><a id="contact"><span href="#" class="icon"><i aria-hidden="true" class="icon-phone"></i></span><span>Contact</span></a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
     <div class="one_page_main">
-      <section class="first">
+      <section class="first active">
         <div class="background"></div>
         <div class="page_container">
           <ng-view></ng-view>
@@ -53,8 +40,19 @@
         </div>
       </section>
     </div>
-    <div class="footer"></div><script src="js/angular.js"></script>
+    <nav id="bt-menu" class="bt-menu"><a class="bt-menu-trigger"><span>Menu</span></a>
+      <ul>
+        <li><a class="bt-icon icon-user-outline">Portfolio</a></li>
+        <li><a class="bt-icon icon-sun">Works</a></li>
+        <li><a class="bt-icon icon-windows">Blya</a></li>
+        <li><a class="bt-icon icon-speaker">Blya</a></li>
+        <li><a class="bt-icon icon-star">Blya</a></li>
+        <li><a class="bt-icon icon-bubble">Blya</a></li>
+      </ul>
+    </nav><script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/onePage.controller.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/borderMenu.js"></script>
   </body>
 </html>
