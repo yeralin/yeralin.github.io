@@ -20,8 +20,8 @@
 
 .classysocial .smain {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 5.3vw;
+    height: 5.3vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,8 +46,8 @@
 }
 
 .classysocial .smain img {
-    width: 100px;
-    height: 100px;
+    width: 5.3vw;
+    height: 5.3vw;
     cursor: pointer;
     border-radius: 32px;
     -o-border-radius: 32px;
@@ -66,8 +66,8 @@
 }
 
 .classysocial .sbutton {
-    width: 72px;
-    height: 72px;
+    width: 4vw;
+    height: 4vw;
     position: absolute;
     top: 9px;
     left: 9px;

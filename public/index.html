@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Single Page App</title>
-    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleButtons.css" />
     <link rel="stylesheet" type="text/css" href="css/nprogress.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
@@ -22,22 +20,40 @@
     <script src="js/index.js"></script>
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/jquery.classysocial.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
   </head>
   <body>
-    <div data-orientation="line" data-picture="css/img/share_core_square.png" data-linkedin-handle="daniyar.yeralin" data-facebook-handle="picozu" data-twitter-handle="picozu_editor" data-github-handle="daniyar.yeralin" data-instagram-handle="picozu" data-networks="linkedin,facebook,twitter,instagram,github" class="classysocial"></div>
+    <div data-orientation="line" data-picture="css/img/share_core_square.png" data-linkedin-handle="364881211" data-facebook-handle="Yeralin.Daniyar" data-twitter-handle="Daniyar_Y" data-github-handle="Yeralin" data-instagram-handle="daniyar_yeralin" data-networks="linkedin,facebook,twitter,instagram,github" class="classysocial"></div>
     <div class="one_page_main">
-      <section class="first active">
-        <!--.classysocial (data-orientation="line" data-picture="images/share_core_square.jpg" data-facebook-handle="picozu" data-socl-handle="marius-stanciu" data-twitter-handle="picozu_editor" data-email-handle="office@picozu.net" data-pinterest-handle="picozu" data-instagram-handle="picozu" data-networks="socl,facebook,twitter,instagram,pinterest,email")-->
+      <section class="first">
         <div id="first" class="background"></div>
         <div id="second" class="background"></div>
         <div class="page_container">
-          <div class="contentText">Hello and Welcome<br/>My name is Daniyar Yeralin<br/>I'm Designer and<br/>Software Developer<br/>Living and studying in the USA</div>
+          <div class="contentText">Hello and Welcome<br/>My name is Daniyar Yeralin<br/>I'm Designer and<br/>Software Developer<br/>Living and Studying in the USA</div>
         </div>
       </section>
       <section class="second">
         <div class="background"></div>
         <div class="page_container">
-          <div class="contentText">Hello and Welcome!</div>
+          <div class="contentText">
+            <button data-sort="random" class="sort">Random</button>
+            <div id="Container">
+              <div class="row">
+                <div class="large-3 columns mix">
+                  <div class="infoBlock">C++</div>
+                </div>
+                <div class="large-3 columns mix">
+                  <div class="infoBlock">Java</div>
+                </div>
+                <div class="large-3 columns mix">
+                  <div class="infoBlock">HTML5</div>
+                </div>
+                <div class="large-3 columns mix">
+                  <div class="infoBlock">Python</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="third">
@@ -56,10 +72,7 @@
         <li><a class="bt-icon icon-user-outline">Other</a></li>
         <li><a class="bt-icon icon-user-outline">Contact Me</a></li>
       </ul>
-    </nav><script src="js/angular.js"></script>
-    <script src="js/angular-route.js"></script>
-    <script src="js/onePage.controller.js"></script>
-    <script src="js/classie.js"></script>
+    </nav><script src="js/classie.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/borderMenu.js"></script>
     <script>
