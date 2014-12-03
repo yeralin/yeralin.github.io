@@ -1,7 +1,4 @@
 @import 'nib'
-
-stateColors = blue yellow yellowgreen red
-states = zeroState, firstState, secondState, thirdState
 abs = absolute
 
 html
@@ -9,13 +6,19 @@ html
 	height 100% //1366px
 	width 100% //1080px
 
+@font-face
+	font-family Bebas
+	font-style normal
+	src url(fonts/bebas/BEBAS__.ttf)
+	font-smoothing antialiased !important
+	text-rendering optimizeLegibility
+
 fontSet()
-	font-size 3.3em
+	font-size 4.3em
 	font-weight 900
 	-text-stroke 1%
-	-font-smoothing antialiased !important
 	text-shadow 0 0 1px rgba(51,51,51,0.2)2
-	font-family 'Merriweather' serif
+	font-family Bebas
 
 backgroundSet()
 	width 100%
@@ -31,10 +34,11 @@ backgroundSet()
 	width 100%
 
 .contentText
-	padding-top 5em
+	padding-top 2em
+	padding-left 1em
 	width 100%
-	color black
-	text-align center
+	color white
+	text-align left
 	fontSet()
 
 .footer
@@ -43,15 +47,17 @@ backgroundSet()
 	height 4%
 	width 100%
 
-.first > .background
-	width 20%
-	background-image url('../img/header.svg')
+.first > #second
+	background-image url('../img/alm-mountains.jpg')
 	background-repeat no-repeat
-	background-position 20em 0em
-	background-size 100% 50%
-
-.first > .background
+	background-size 100%
+	z-index -2 !important
 	backgroundSet()
+
+.first > #first
+	backgroundSet()
+	opacity 0.9
+	background-color rgb(61,182,241)
 
 .second > .background
 	backgroundSet()

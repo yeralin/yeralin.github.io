@@ -255,11 +255,11 @@
                                 var n = p + (p + i * o) * Math.cos(v), r = d + (d + i * o) * Math.sin(v);
                                 $(this).css({
                                     display: 'block',
-                                    left: p + 'px',
-                                    top: d + 'px'
+                                    left: d*11 + 'px',
+                                    top: p + 'px'
                                 }).stop().delay(t * o).animate({
-                                    left: n + 'px',
-                                    top: r + 'px'
+                                    left: r + 'px',
+                                    top: n*2 + 'px'
                                 }, e);
                                 o++;
                             });

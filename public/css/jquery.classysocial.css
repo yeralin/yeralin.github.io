@@ -12,24 +12,21 @@
     display: block;
     width: 72px;
     height: 72px;
-    position: relative;
+    position: absolute;
+    top: 3%;
+    right: 5%;
     z-index: 1;
 }
 
 .classysocial .smain {
     display: block;
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    border: 4px solid #fff;
-    box-shadow: 0 0 5px #bbb;
-    -o-box-shadow: 0 0 5px #bbb;
-    -ms-box-shadow: 0 0 5px #bbb;
-    -moz-box-shadow: 0 0 5px #bbb;
-    -webkit-box-shadow: 0 0 5px #bbb;
+    border: 2px solid #fff;
     border-radius: 36px;
     -o-border-radius: 36px;
     -ms-border-radius: 36px;
@@ -49,8 +46,8 @@
 }
 
 .classysocial .smain img {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     border-radius: 32px;
     -o-border-radius: 32px;
@@ -69,8 +66,8 @@
 }
 
 .classysocial .sbutton {
-    width: 36px;
-    height: 36px;
+    width: 72px;
+    height: 72px;
     position: absolute;
     top: 9px;
     left: 9px;
@@ -80,17 +77,12 @@
     display: none;
     background: no-repeat;
     background-color: #fff;
+    background-size: 100%;
     border-radius: 20px;
     -o-border-radius: 20px;
     -ms-border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
-    box-shadow: 0 0 5px #bbb;
-    -o-box-shadow: 0 0 5px #bbb;
-    -ms-box-shadow: 0 0 5px #bbb;
-    -moz-box-shadow: 0 0 5px #bbb;
-    -webkit-box-shadow: 0 0 5px #bbb;
-    border: 4px solid #fff;
     background-position: center center;
 }
 
