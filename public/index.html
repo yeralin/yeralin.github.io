@@ -10,24 +10,33 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css' />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.classysocial.css" />
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <script src="js/nprogress.js"></script>
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/anijs-min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery.classysocial.js"></script>
   </head>
   <body>
     <div class="one_page_main">
       <section class="first active">
+        <!--.classysocial (data-orientation="line" data-picture="images/share_core_square.jpg" data-facebook-handle="picozu" data-socl-handle="marius-stanciu" data-twitter-handle="picozu_editor" data-email-handle="office@picozu.net" data-pinterest-handle="picozu" data-instagram-handle="picozu" data-networks="socl,facebook,twitter,instagram,pinterest,email")-->
         <div class="background"></div>
         <div class="page_container">
-          <ng-view></ng-view>
+          <div class="row">
+            <div class="large large-centered columns">
+              <div class="contentText">Hello and Welcome<br/>My name is Daniyar Yeralin<br/>I'm Designer and Software Developer</div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="second">
+      <section data-midnight="white" class="second">
         <div class="background"></div>
         <div class="page_container">
           <div class="contentText">Hello and Welcome!</div>
@@ -42,17 +51,22 @@
     </div>
     <nav id="bt-menu" class="bt-menu"><a class="bt-menu-trigger"><span>Menu</span></a>
       <ul>
+        <li><a class="bt-icon icon-user-outline">About me</a></li>
         <li><a class="bt-icon icon-user-outline">Portfolio</a></li>
-        <li><a class="bt-icon icon-sun">Works</a></li>
-        <li><a class="bt-icon icon-windows">Blya</a></li>
-        <li><a class="bt-icon icon-speaker">Blya</a></li>
-        <li><a class="bt-icon icon-star">Blya</a></li>
-        <li><a class="bt-icon icon-bubble">Blya</a></li>
+        <li><a class="bt-icon icon-user-outline">&#160;</a></li>
+        <li><a class="bt-icon icon-user-outline">&#160;</a></li>
+        <li><a class="bt-icon icon-user-outline">Other</a></li>
+        <li><a class="bt-icon icon-user-outline">Contact Me</a></li>
       </ul>
     </nav><script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/onePage.controller.js"></script>
     <script src="js/classie.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script src="js/borderMenu.js"></script>
+    <script>
+    $(document).foundation();
+    $('.classysocial').ClassySocial();
+    </script>
   </body>
 </html>
