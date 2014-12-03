@@ -272,7 +272,7 @@
                             });
                             el.find('.sbutton').each(function() {
                                 $(this).stop().delay(t * o).animate({
-                                    left: p,
+                                    left: p*11,
                                     top: d
                                 }, e);
                                 o--;
