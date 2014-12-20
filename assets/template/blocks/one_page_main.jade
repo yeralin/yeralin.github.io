@@ -3,30 +3,49 @@
 		.background#first
 		.background#second
 		.page_container
-			.contentText Hello and Welcome
-				br
-				|My name is Daniyar Yeralin
-				br
-				|I'm Designer and
-				br
-				|Software Developer
-				br
-				|Living and Studying in the USA
+			.contentText 
+				.intro Hello and Welcome
+					br
+					|My name is Daniyar Yeralin
+					br
+					|I'm Designer and
+					br
+					|Software Developer
+					br
+					|Living and Studying in the USA
 	section.second
 		.background
 		.page_container
 			.contentText
+				.row
+					.small-3.large-centered.columns Skills
 				button.sort(data-sort="random") Random
 				#Container
 					.row
 						.large-3.columns.mix
-							.infoBlock C++
+							.1lang
+								.infoBlock C++
+								.progress.large-12.round
+									span.meter
+								.content Super cool
 						.large-3.columns.mix
-							.infoBlock Java
+							.2lang
+								.infoBlock Java
+								.progress.large-12.round
+									span.meter
+								.content Super cool
 						.large-3.columns.mix
-							.infoBlock HTML5
+							.3lang
+								.infoBlock HTML5
+								.progress.large-12.round
+									span.meter
+								.content Super cool
 						.large-3.columns.mix
-							.infoBlock Python
+							.4lang
+								.infoBlock Python
+								.progress.large-12.round
+									span.meter
+								.content Super cool
 	section.third
 		.background
 		.page_container
