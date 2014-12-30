@@ -4,15 +4,23 @@
     <meta charset="utf-8"/>
     <title>Single Page App</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/skills.css" />
+    <link rel="stylesheet" type="text/css" href="css/contacts.css" />
+    <link rel="stylesheet" type="text/css" href="css/aboutMe.css" />
+    <link rel="stylesheet" type="text/css" href="css/swingAnimation.css" />
+    <link rel="stylesheet" type="text/css" href="css/goalProgress.css" />
     <link rel="stylesheet" type="text/css" href="css/nprogress.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css" />
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.classysocial.css" />
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <script src="js/nprogress.js"></script>
+    <script src="js/goalProgress.js"></script>
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/chart.js"></script>
@@ -23,53 +31,147 @@
     <script src="js/jquery.mixitup.js"></script>
   </head>
   <body>
-    <div data-orientation="line" data-picture="css/img/share_core_square.png" data-linkedin-handle="364881211" data-facebook-handle="Yeralin.Daniyar" data-twitter-handle="Daniyar_Y" data-github-handle="Yeralin" data-instagram-handle="daniyar_yeralin" data-networks="linkedin,facebook,twitter,instagram,github" class="classysocial"></div>
     <div class="one_page_main">
-      <section class="first">
-        <div id="first" class="background"></div>
-        <div id="second" class="background"></div>
-        <div class="page_container">
-          <div class="contentText"> 
-            <div class="intro">Hello and Welcome<br/>My name is Daniyar Yeralin<br/>I'm Designer and<br/>Software Developer<br/>Living and Studying in the USA</div>
-          </div>
-        </div>
+      <section class="main">
+        <ul id="scene" class="scene no-bullet">
+          <li data-depth="0.1" class="layer">
+            <div id="second" class="background">
+              <div id="first" class="background"></div>
+            </div>
+          </li>
+          <li data-depth="0.2" class="layer">
+            <div class="page_container">
+              <div class="content">
+                <div class="intro">Hello and Welcome<br/>My name is Daniyar Yeralin<br/>I'm Designer and<br/>Software Developer<br/>Living and Studying in the USA</div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
-      <section class="second">
+      <section class="skills">
         <div class="background"></div>
         <div class="page_container">
-          <div class="contentText">
+          <div class="controls">
+            <ul class="stack button-group">
+              <li>
+                <h2>Filter</h2>
+              </li>
+              <li>
+                <button data-filter="all" class="filter">Show all</button>
+              </li>
+              <li>
+                <button data-filter=".programLang" class="filter">Programming Languages</button>
+              </li>
+              <li>
+                <button data-filter=".scriptLang" class="filter">Scripting Languages</button>
+              </li>
+              <li>
+                <button data-filter=".webLang" class="filter">Web Languages</button>
+              </li>
+              <li>
+                <button data-filter=".other" class="filter">Other</button>
+              </li>
+            </ul>
+            <ul class="stack button-group">
+              <li>
+                <h2>Sort</h2>
+              </li>
+              <li>
+                <button data-sort="value:desc" class="sort">Descending</button>
+              </li>
+              <li>
+                <button data-sort="value:asc" class="sort">Ascending</button>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
             <div class="row">
-              <div class="small-3 large-centered columns">Skills</div>
+              <div class="small-3 large-centered columns skillsLabel">Skills</div>
             </div>
-            <button data-sort="random" class="sort">Random</button>
             <div id="Container">
-              <div class="row">
-                <div class="large-3 columns mix">
-                  <div class="1lang">
-                    <div class="infoBlock">C++</div>
-                    <div class="progress large-12 round"><span class="meter"></span></div>
-                    <div class="content">Super cool</div>
+              <div class="row langs">
+                <div data-value="6" class="large-4 columns mix programLang end">
+                  <div class="lang_1">
+                    <div class="infoBlock">C++/C</div>
+                    <div class="progress large-12 round"><span style="width:80%; background-color:#FFCF00;" class="meter"></span></div>
+                    <div class="langContent">Upper</div>
                   </div>
                 </div>
-                <div class="large-3 columns mix">
-                  <div class="2lang">
+                <div data-value="6" class="large-4 columns mix programLang end">
+                  <div class="lang_2">
                     <div class="infoBlock">Java</div>
-                    <div class="progress large-12 round"><span class="meter"></span></div>
-                    <div class="content">Super cool</div>
+                    <div class="progress large-12 round"><span style="width:80%; background-color:#FFCF00;" class="meter"></span></div>
+                    <div class="langContent">Upper</div>
                   </div>
                 </div>
-                <div class="large-3 columns mix">
-                  <div class="3lang">
-                    <div class="infoBlock">HTML5</div>
-                    <div class="progress large-12 round"><span class="meter"></span></div>
-                    <div class="content">Super cool</div>
+                <div data-value="8" class="large-4 columns mix scriptLang end">
+                  <div class="lang_4">
+                    <div class="infoBlock">JavaScript</div>
+                    <div class="progress large-12 round"><span style="width:80%; background-color:#FFCF00;" class="meter"></span></div>
+                    <div class="langContent">Upper</div>
                   </div>
                 </div>
-                <div class="large-3 columns mix">
-                  <div class="4lang">
+                <div data-value="4" class="large-4 columns mix scriptLang webLang end">
+                  <div class="lang_4">
                     <div class="infoBlock">Python</div>
-                    <div class="progress large-12 round"><span class="meter"></span></div>
-                    <div class="content">Super cool</div>
+                    <div class="progress large-12 round"><span style="width:40%; background-color:#D66B1D;" class="meter"></span></div>
+                    <div class="langContent">Medium</div>
+                  </div>
+                </div>
+                <div data-value="10" class="large-4 columns mix webLang end">
+                  <div class="lang_4">
+                    <div class="infoBlock">Stylus/Jade</div>
+                    <div class="progress large-12 round"><span style="width:100%; background-color:#06FF00;" class="meter"></span></div>
+                    <div class="langContent">Advanced</div>
+                  </div>
+                </div>
+                <div data-value="8" class="large-4 columns mix webLang end">
+                  <div class="lang_3">
+                    <div class="infoBlock">HTML5</div>
+                    <div class="progress large-12 round"><span style="width:80%; background-color:#FFCF00;" class="meter"></span></div>
+                    <div class="langContent">Upper</div>
+                  </div>
+                </div>
+                <div data-value="4" class="large-4 columns mix webLang end">
+                  <div class="lang_4">
+                    <div class="infoBlock">Meteor</div>
+                    <div class="progress large-12 round"><span style="width:40%; background-color:#D66B1D;" class="meter"></span></div>
+                    <div class="langContent">Medium</div>
+                  </div>
+                </div>
+                <div data-value="8" class="large-4 columns mix webLang end">
+                  <div class="lang_4">
+                    <div class="infoBlock">Phonegap</div>
+                    <div class="progress large-12 round"><span style="width:80%; background-color:#FFCF00;" class="meter"></span></div>
+                    <div class="langContent">Upper</div>
+                  </div>
+                </div>
+                <div data-value="4" class="large-4 columns mix end">
+                  <div class="lang_4">
+                    <div class="infoBlock">DataBases</div>
+                    <div class="progress large-12 round"><span style="width:40%; background-color:#D66B1D;" class="meter"></span></div>
+                    <div class="langContent">Medium</div>
+                  </div>
+                </div>
+                <div data-value="8" class="large-4 columns mix webLang end">
+                  <div class="lang_4">
+                    <div class="infoBlock">CSS3</div>
+                    <div class="progress large-12 round"><span style="width:80%; background-color:#FFCF00;" class="meter"></span></div>
+                    <div class="langContent">Upper</div>
+                  </div>
+                </div>
+                <div data-value="4" class="large-4 columns mix other end">
+                  <div class="lang_4">
+                    <div class="infoBlock">Linux</div>
+                    <div class="progress large-12 round"><span style="width:40%; background-color:#D66B1D;" class="meter"></span></div>
+                    <div class="langContent">Medium</div>
+                  </div>
+                </div>
+                <div data-value="4" class="large-4 columns mix other end">
+                  <div class="lang_4">
+                    <div class="infoBlock">Photoshop</div>
+                    <div class="progress large-12 round"><span style="width:40%; background-color:#D66B1D;" class="meter"></span></div>
+                    <div class="langContent">Medium</div>
                   </div>
                 </div>
               </div>
@@ -77,13 +179,68 @@
           </div>
         </div>
       </section>
-      <section class="third">
-        <div class="background"></div>
+      <section class="aboutMe">
+        <div id="second" class="background">
+          <div id="first" class="background"></div>
+        </div>
         <div class="page_container">
-          <div class="contentText">Hello and Welcome!</div>
+          <div class="content">
+            <div class="row">
+              <div class="large columns skills">About
+                <p>Me</p>
+              </div>
+            </div>
+            <div class="leftContent">I'm passionate programmer</div>
+            <div class="rightContent">
+              <ul class="no-bullet">
+                <li>Goals</li>
+                <li>
+                  <div class="goal">Graduation from Pennsylvania State University (December, 2016)</div>
+                  <div id="graduation" class="goalsProgress"></div>
+                </li>
+                <li>
+                  <div class="goal">Personal SPA website</div>
+                  <div id="website" class="goalsProgress"></div>
+                </li>
+                <li>
+                  <div class="goal">Penn State Course Registration Project</div>
+                  <div id="courseReg" class="goalsProgress"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
+      <section class="contacts">
+        <ul id="scene2" class="scene2 no-bullet">
+          <li data-depth="0.1" class="layer">
+            <div id="second" class="background">
+              <div id="first" class="background"></div>
+            </div>
+          </li>
+          <li data-depth="0.2" class="layer">
+            <div class="page_container">
+              <div class="content">
+                <div class="row">
+                  <div class="small-3 large-centered columns skills">Contacts</div>
+                </div>
+                <div class="bar">
+                  <div class="barText">
+                    <ul class="no-bullet">
+                      <li><a class="infoAddr">10 Vairo blvd. Apt. 215B<br/>State College PA 16803<br/>USA</a></li>
+                      <li><a class="infoTel">+19177424658</a></li>
+                      <li><a class="infoMail">daniyar.yeralin@gmail.com</a></li>
+                    </ul>
+                    <div class="icon-bar large-vertical three-up"><a class="item"><i class="fi-home"></i></a><a class="item"><i class="fi-telephone"></i></a><a class="item"><i class="fi-mail"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
+    <div data-orientation="line" data-picture="css/img/share_core_square.png" data-linkedin-handle="364881211" data-facebook-handle="Yeralin.Daniyar" data-twitter-handle="Daniyar_Y" data-github-handle="Yeralin" data-instagram-handle="daniyar_yeralin" data-networks="linkedin,facebook,twitter,instagram,github" class="classysocial"></div>
     <nav id="bt-menu" class="bt-menu"><a class="bt-menu-trigger"><span>Menu</span></a>
       <ul>
         <li><a class="bt-icon icon-user-outline">About me</a></li>
@@ -96,9 +253,7 @@
     </nav><script src="js/classie.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/borderMenu.js"></script>
-    <script>
-    $(document).foundation();
-    $('.classysocial').ClassySocial();
-    </script>
+    <script src="js/parallax.js"></script>
+    <script src="js/bottomScript.js"></script>
   </body>
 </html>

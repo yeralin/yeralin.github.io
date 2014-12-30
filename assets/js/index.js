@@ -3,13 +3,39 @@ $(window).load(function() {
 });
 
 
-
 $(document).ready(function() {
-
     $(".one_page_main").onepage_scroll({
         sectionContainer: "section",
         responsiveFallback: 600,
         loop: true
+    });
+
+	$(".one_page_main").onepage_scroll({
+	  afterMove: function(index) {
+	    if($( ".contacts" ).hasClass( "active" ) == true){
+	    	$(".bar").addClass('animated');
+            $(".bar").animate({width:"40.4vh"},200);
+            $(".barText").css("display","block");
+	    }
+	  }
+	});
+
+    $('#graduation').goalProgress({
+        goalAmount: 100,
+        currentAmount: 50,
+        textAfter: '%'
+    });
+
+    $('#courseReg').goalProgress({
+        goalAmount: 100,
+        currentAmount: 100,
+        textAfter: '%'
+    });
+
+     $('#website').goalProgress({
+        goalAmount: 100,
+        currentAmount: 95,
+        textAfter: '%'
     });
 
     NProgress.start();

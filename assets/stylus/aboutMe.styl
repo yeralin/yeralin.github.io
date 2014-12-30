@@ -1,0 +1,64 @@
+@import 'nib'
+@import 'requires/*'
+abs = absolute
+
+.aboutMe .columns
+	padding-right 9rem !important
+
+.aboutMe p
+	color #2c3e50
+
+.leftContent
+	float left
+	position relative
+	display inline-block
+	fontSetGothamLight()
+	font-size 2vh
+	width 50%
+	height 100%
+
+.rightContent
+	float right
+	color black
+	position relative
+	display inline-block
+	fontSetGothamLight()
+	font-size 2vh
+	width 50%
+	height 100%
+	> ul
+		>li:first-child
+			font-size 5vh
+		>li
+			margin-bottom 5%
+			.goal
+				font-size 2vh
+			.goalProgress
+				width 80%
+				font-size 1.5vh
+				margin 0 auto
+			.progressBar
+				border-radius 2px
+			#graduation
+				.progressBar
+					background-color #162952 !important
+			#courseReg
+				.progressBar
+					background-color #ee9b00 !important
+			#website
+				.progressBar
+					background-color #E01F59 !important
+
+.aboutMe #first
+	width 50%
+	height 100%
+	z-index -1 !important
+	opacity 1
+	background-color #2c3e50
+
+.aboutMe #second
+	backgroundSet()
+	background-repeat no-repeat
+	background-size 100%
+	background-color #FFFFFF
+	z-index -1 !important

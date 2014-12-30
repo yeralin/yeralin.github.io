@@ -13,25 +13,19 @@
     width: 72px;
     height: 72px;
     position: absolute;
-    top: 3%;
-    right: 5%;
+    top: 4%;
+    right: 2%;
     z-index: 1;
 }
 
 .classysocial .smain {
     display: block;
-    width: 5.3vw;
-    height: 5.3vw;
+    width: 4.8vw;
+    height: 4.9vw;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    border: 2px solid #fff;
-    border-radius: 36px;
-    -o-border-radius: 36px;
-    -ms-border-radius: 36px;
-    -moz-border-radius: 36px;
-    -webkit-border-radius: 36px;
     box-sizing: content-box;
     -o-box-sizing: content-box;
     -ms-box-sizing: content-box;
@@ -46,8 +40,8 @@
 }
 
 .classysocial .smain img {
-    width: 5.3vw;
-    height: 5.3vw;
+    width: 4.8vw;
+    height: 4.9vw;
     cursor: pointer;
     border-radius: 32px;
     -o-border-radius: 32px;
@@ -57,17 +51,11 @@
     border: none;
 }
 
-.classysocial .smain:hover {
-    box-shadow: 0 0 5px #888;
-    -o-box-shadow: 0 0 5px #888;
-    -ms-box-shadow: 0 0 5px #888;
-    -moz-box-shadow: 0 0 5px #888;
-    -webkit-box-shadow: 0 0 5px #888;
-}
+
 
 .classysocial .sbutton {
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     position: absolute;
     top: 9px;
     left: 9px;
@@ -87,11 +75,11 @@
 }
 
 .classysocial .sbutton:hover {
-    box-shadow: 0 0 5px #888;
-    -o-box-shadow: 0 0 5px #888;
-    -ms-box-shadow: 0 0 5px #888;
-    -moz-box-shadow: 0 0 5px #888;
-    -webkit-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 0.5px #D9EAFF;
+    -o-box-shadow: 0 0 0.5px #D9EAFF;
+    -ms-box-shadow: 0 0 0.5px #D9EAFF;
+    -moz-box-shadow: 0 0 0.5px #D9EAFF;
+    -webkit-box-shadow: 0 0 0.5px #D9EAFF;
 }
 
 /* Default Theme */

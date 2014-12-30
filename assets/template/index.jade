@@ -5,14 +5,12 @@ html(lang='en' ng-app="pageController")
 		include add/_css
 		include add/_js
 	body
+		include blocks/spa
 		include blocks/classysocial
-		include blocks/one_page_main
 		include blocks/menu
 
 		<script src="js/classie.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script src="js/borderMenu.js"></script>
-		<script>
-		$(document).foundation();
-		$('.classysocial').ClassySocial();
-		</script>
+		<script src="js/parallax.js"></script>
+		<script src="js/bottomScript.js"></script>
