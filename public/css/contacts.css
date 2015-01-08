@@ -73,6 +73,7 @@ a {
   height: 70px;
   text-align: left;
   font-size: 2vh;
+  font-weight: 900;
   background-color: #000 #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -100,15 +101,15 @@ a {
 }
 
 .contacts .bar > .barText > .icon-bar {
-  top: 3%;
-  left: 0%;
-  position: fixed;
+  top: -2%;
+  left: 6%;
+  position: absolute;
   background-color: rgba(0,0,0,0);
   float: right;
 }
 
 .contacts .bar > .barText > .icon-bar > a:nth-child(2) {
-  margin-top: 18%;
+  margin-top: 25%;
 }
 
 .contacts .bar > .barText > .icon-bar > * i {
