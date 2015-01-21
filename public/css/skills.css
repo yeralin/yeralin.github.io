@@ -78,5 +78,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #3498db;
+  background-image: url("../img/backgroundSVG.svg");
+  background-size: 100% 100%;
 }

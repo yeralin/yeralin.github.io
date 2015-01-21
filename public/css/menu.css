@@ -139,7 +139,7 @@
 }
 
 .bt-menu.bt-menu-open ul {
-	height: 6%;
+	height: 8vh;
 	-webkit-transition: none;
 	transition: none;
 }
