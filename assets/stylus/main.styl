@@ -1,30 +1,77 @@
 @import 'nib'
 @import 'requires/*'
 abs = absolute
-
-.block
-	z-index 1
-	background-color white
+.main .page_container
+.main .content
+	width 95vw
+	position abs
+	left 20%
+	top 100px
+	text-align left
+.rw-wrapper
+	width 100%
+.rw-sentence
+	fontSetUpper()
+	margin 0
+	text-align left
+.rw-sentence span
+	color #FFFFFF
+	font-size 1em
+	font-weight normal
+.rw-words
+	display inline
+	text-indent 0.55em
+.rw-words-1 span
+	width 100%
 	position absolute
-	bottom -14%
-	opacity 0.4
-	width 100%
-	height 200px
+	opacity 0
+	overflow hidden
+	color #FFFFFF
+	animation rotateWord 18s linear infinite 0s
 
-.main .intro
-	padding-left 28%
-	padding-top 10%
-	width 100%
+.rw-words-1 span:nth-child(2)
+	animation-delay 3s
+	color #FFFFFF
+
+.rw-words-1 span:nth-child(3)
+	animation-delay 6s
+	color #FFFFFF
+
+.rw-words-1 span:nth-child(4)
+	animation-delay 9s
+	color #FFFFFF
+
+.rw-words-1 span:nth-child(5)
+	animation-delay 12s
+	color #FFFFFF
+
+.rw-words-1 span:nth-child(6)
+	animation-delay 15s
+	color #FFFFFF
+
+
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
 
 .main #first
 	backgroundMainSet()
 	z-index -1 !important
-	opacity 0.5
-	background-color #22313F
+	opacity 0.2
+	background-color rgb(52, 152, 219)
 
 .main #second
+	filter blur(5px)
 	backgroundMainSet()
-	background-image url('../img/alm-mountains.jpg')
+	background-image url('../img/main.png')
 	background-repeat no-repeat
 	background-size 100% 100%
 	z-index -2 !important
+
+
