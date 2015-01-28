@@ -15,51 +15,12 @@
 }
 
 .skills .skillsLabel {
+  font-size: 4vw;
   margin-bottom: 5%;
-}
-
-.skills .controls {
-  top: 15%;
-  position: absolute;
-}
-
-.skills .controls li > button {
-  font-weight: normal;
-  word-spacing: 0vh;
-  line-height: 2.1vh;
-  text-shadow: 0 0 1px rgba(51,51,51,0.2) 2;
-  font-family: GothamNarrowLight, sans-serif;
-  width: 65%;
-  font-size: 1.6vh;
-  font-weight: 900;
-}
-
-.skills .controls li > h2 {
-  margin-left: 15%;
-  color: #fff;
 }
 
 .skills .content {
   margin-left: 3.5%;
-}
-
-.skills .infoBlock {
-  text-align: center;
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 8px;
-  font-size: 5vh;
-}
-
-.skills .langContent {
-  text-align: center;
-  font-size: 3.3vh;
-}
-
-.skills .columns.mix {
-  width: 20vw;
-  height: 20vh;
-  margin-bottom: 3%;
 }
 
 .skills .langs .progress {
@@ -71,8 +32,100 @@
   display: none;
 }
 
-.row.langs {
-  max-width: 85% !important;
+@media only screen and (max-width: 1450px) {
+  .row.langs {
+    max-width: 85% !important;
+  }
+
+  .langContent {
+    text-align: center;
+    font-size: 3.3vh;
+  }
+
+  .columns.mix {
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 3%;
+  }
+
+  .infoBlock {
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 8px;
+    font-size: 4vh;
+  }
+
+  .controls {
+    top: 15%;
+    position: absolute;
+  }
+
+  .controls li > button {
+    font-weight: normal;
+    word-spacing: 0vh;
+    line-height: 2.1vh;
+    text-shadow: 0 0 1px rgba(51,51,51,0.2) 2;
+    font-family: GothamNarrowLight, sans-serif;
+    width: 65%;
+    font-size: 1.6vh;
+    font-weight: 900;
+  }
+
+  .controls li > h2 {
+    margin-left: 15%;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .row.langs {
+    max-width: 65% !important;
+    max-height: 20px !important;
+  }
+
+  .langContent {
+    text-align: center;
+    font-size: 3.3vh;
+  }
+
+  .columns.mix {
+    margin-bottom: 3%;
+  }
+
+  .infoBlock {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+  }
+
+  .infoBlock p {
+    display: initial;
+    width: 80%;
+    font-size: 4vh;
+  }
+
+  .controls {
+    top: 10%;
+    position: absolute;
+  }
+
+  .controls li > button {
+    font-weight: normal;
+    word-spacing: 0vh;
+    line-height: 2.1vh;
+    text-shadow: 0 0 1px rgba(51,51,51,0.2) 2;
+    font-family: GothamNarrowLight, sans-serif;
+    width: 65%;
+    font-size: 1.6vh;
+    font-weight: 900;
+  }
+
+  .controls li > h2 {
+    margin-left: 15%;
+    color: #fff;
+  }
 }
 
 .skills > .background {

@@ -15,32 +15,20 @@
 }
 
 .contacts .content {
+  font-size: 4vw;
   text-align: center !important;
-  margin-top: 15%;
 }
 
 a {
   color: #fff !important;
 }
 
-.contacts .bar.animated {
-  margin-right: 25%;
-  margin-top: 5%;
-}
-
 .contacts .bar {
-  border-radius: 2px;
-  margin-right: 25%;
-  margin-top: 5%;
-  height: 231px;
-  width: 0px;
-  margin: 0 auto;
+  width: 40vw;
 }
 
 .contacts .bar > .barText {
-  display: none;
   position: absolute;
-  right: 0%;
 }
 
 .contacts .bar > .barText > ul {
