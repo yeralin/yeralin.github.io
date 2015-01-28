@@ -15,10 +15,12 @@
 }
 
 .aboutMe .columns {
+  font-size: 4vw;
   padding-right: 6.6rem !important;
 }
 
 .aboutMe p {
+  font-size: 4vw;
   padding-left: 0.4rem;
   color: #2c3e50;
 }
@@ -27,14 +29,24 @@
   float: left;
   position: relative;
   display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.leftContent p {
   font-weight: normal;
   word-spacing: 0vh;
   line-height: 2.1vh;
   text-shadow: 0 0 1px rgba(51,51,51,0.2) 2;
   font-family: GothamNarrowLight, sans-serif;
-  font-size: 2vh;
-  width: 50%;
-  height: 100%;
+  font-size: 3vh;
+  color: #fff;
+  width: 80%;
+  word-spacing: 0px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 6vh;
+  text-align: left;
 }
 
 .rightContent {
@@ -62,6 +74,7 @@
 
 .rightContent > ul >li .goal {
   font-size: 2vh;
+  font-weight: 700;
 }
 
 .rightContent > ul >li .goalProgress {
@@ -84,6 +97,10 @@
 
 .rightContent > ul >li #website .progressBar {
   background-color: #e01f59 !important;
+}
+
+.rightContent > ul >li a {
+  color: #00f !important;
 }
 
 .aboutMe #first {

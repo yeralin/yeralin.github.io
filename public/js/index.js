@@ -17,6 +17,18 @@ $(document).ready(function() {
 	    }
 	  }
 	});*/
+    $(".mAbout").on('click', function() {
+          $(".one_page_main").moveTo(3);
+        });
+    $(".mSkills").on('click', function() {
+          $(".one_page_main").moveTo(2);
+        });
+    $(".mPorfolio").on('click', function() {
+          $(".one_page_main").moveTo(3);
+        });
+    $(".mContact").on('click', function() {
+          $(".one_page_main").moveTo(4);
+        });
 
     $('#graduation').goalProgress({
         goalAmount: 100,

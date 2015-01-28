@@ -28,6 +28,8 @@ a {
 }
 
 .contacts .bar > .barText {
+  margin-left: 2%;
+  margin-top: 3%;
   position: absolute;
 }
 
