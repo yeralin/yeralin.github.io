@@ -259,7 +259,7 @@
                                     top: p + 'px'
                                 }).stop().delay(t * o).animate({
                                     left: r + 'px',
-                                    top: n*2 + 'px'
+                                    top: n*1.8 + 'px'
                                 }, e);
                                 o++;
                             });

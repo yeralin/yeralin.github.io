@@ -16,6 +16,7 @@
 
 .skills .skillsLabel {
   font-size: 4vw;
+  padding-right: 30%;
   margin-bottom: 5%;
 }
 
@@ -34,7 +35,7 @@
 
 @media only screen and (max-width: 1450px) {
   .row.langs {
-    max-width: 80% !important;
+    max-width: 87% !important;
   }
 
   .langContent {
