@@ -6,7 +6,6 @@ $(window).load(function() {
 $(document).ready(function() {
 	$(".one_page_main").onepage_scroll();
     NProgress.start();
-    
 });
 
 var state = 0;
@@ -40,31 +39,57 @@ $(document).keydown(function(e){
 			$(".ex").text("How it works?");
 			$(".how").addClass("active");
 		}
-		else if(state == 8)
+		else if(state == 8) {
 			$(".one_page_main").moveDown();
+		}
 		else if(state == 9) {
-			$(".videoBlock").addClass("active")
+			$(".screenshot").addClass("active");
 		}
 		else if(state == 10) {
-			$("#video1")[0].play();
+			$(".blockGroup").addClass("active");
 		}
 		else if(state == 11) {
-			$("#video2")[0].play();
+			$(".transferBlock").addClass("active");
 		}
 		else if(state == 12) {
-			$("#video3")[0].play();
+			$(".transferBlock").addClass("hidden");
+			$(".tier").addClass("active");
 		}
 		else if(state == 13) {
-			$("#video4")[0].play();
+			$(".tier").addClass("move");
 		}
 		else if(state == 14) {
+			$(".tier").addClass("hidden");
+		}
+		else if(state == 15) {
+			$(".architecture").addClass("active");
+		}
+		
+		else if(state == 16)
+			$(".one_page_main").moveDown();
+		else if(state == 17) {
+			$(".videoBlock").addClass("active")
+		}
+		else if(state == 18) {
+			$("#video1")[0].play();
+		}
+		else if(state == 19) {
+			$("#video2")[0].play();
+		}
+		else if(state == 20) {
+			$("#video3")[0].play();
+		}
+		else if(state == 21) {
+			$("#video4")[0].play();
+		}
+		else if(state == 22) {
 			$('.bxslider').bxSlider({
 				auto: true,
 				pause: 8000
 			});
 			$(".one_page_main").moveDown();
 		}
-		else if(state == 15) {
+		else if(state == 23) {
 
 			$(".one_page_main").moveDown();
 		}
